@@ -1,0 +1,27 @@
+/* overlay */
+.userinfo-overlay{
+    position: fixed;
+    bottom: 0;
+    right: 0%;
+    padding: 30px;
+    opacity: 0;
+    background: var(--primary-color);
+    transition: .4s ease-in-out;
+}
+.userinfo-overlay.active{
+    margin-right: 10px;
+    opacity: 1;
+    transition: .4s ease-in-out;
+    z-index: 99;
+    box-shadow: rgb(237 29 29 / 54%) 0px 2px 8px 0px;
+}
+.userinfo-overlay .error-msg{
+    background: #e83f3f;
+}
+.userinfo-overlay .btn-fill{
+    background: #fff;
+}
+.btn-fill.btn-cancel{
+    margin-left: 20px;
+    background: red !important;
+}

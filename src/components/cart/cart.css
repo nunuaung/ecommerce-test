@@ -1,0 +1,117 @@
+.cart-items-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.start-shopping{
+    text-align: center;
+}
+.titles{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid pink;
+}
+.cart-item-title{
+    padding: 10px;
+    width: 20%;   
+}
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid pink;
+}
+.cart-item-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    min-height: 145px;
+    border-bottom: 1px solid var(--primary-color);   
+    align-items: center;
+}
+.cart-product{
+    display: flex;
+    align-items: center;
+    width: 20%; 
+}
+.cart-product:first-child, .cart-item-title:first-child{
+    width: 30%;
+}
+.cart-product:first-child{
+    flex-direction: row;
+    align-items: end;
+}
+.cart-info-wrap .trash-icon{
+    padding-left: 20px;
+    font-size: 1.2rem;
+    color: var(--gray-color);
+    cursor: pointer;
+}
+.cart-summary{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-product img{
+    width: 35%;
+    object-fit: cover;
+}
+.count{
+    padding: 0 5px;
+}
+.cart-product-quantity .btn-fill{
+    margin-top: 0;
+    padding: 5px 8px;
+}
+.cart-checkout{
+    margin-top: 20px;
+}
+.subTotal{
+    font-size: 1rem;
+}
+.subTotal span:first-child{
+    padding-right: 5px;
+}
+.continue-shopping{
+    padding-left: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    .cart-item-title{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .titles{
+        display: none;
+    }
+    .subTotal{
+        font-size: .9rem;
+    }
+    .cart-item-wrap{
+        align-items: inherit;
+        flex-direction: column; 
+    }
+    .cart-product{
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+    .cart-items{
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: none;
+    }
+    .cart-item-wrap{
+        padding: 3%;
+        border-bottom: 1px solid pink;
+    }
+    .cart-product:first-child{
+        min-height: 120px;
+    }
+    .cart-product img {
+        width: 45%;
+    }
+    .cart-summary {
+        flex-direction: column-reverse;
+    }
+}

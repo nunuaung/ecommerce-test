@@ -1,0 +1,138 @@
+/* product list */
+.flex3-row{
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: calc(100% + 2%);
+  margin: -20px 0 0 -2%;
+}
+.flex3-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23%;
+  margin: 20px 0 0 2%;
+  box-shadow: rgba(218 26 26 / 20%) 0px 2px 8px 0px;
+}
+/* card */
+.product-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+.product-image img{
+    width: 70%;
+}
+.product-info{
+    padding: 20px 10px;
+    color: #000;
+}
+.product-smallcol{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-name{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 768px){
+  .flex3-col{
+    width: 48%;
+  }
+  .product-name{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px){
+  .flex3-row{
+    width: 100%;
+    margin: 0;
+  }
+  .flex3-col{
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+  .flex3-col:last-child{
+    margin-bottom: 0;
+  }
+}
+/* detail */
+.detail-container .btn-fill{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.detail-container .btn-fill svg{
+    padding-right: 5px;
+}
+.detail-flex {
+    display: flex;
+    justify-content: space-around;
+}
+.detail-col{
+    padding: 3%;
+}
+.detail-col:first-child{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border: 1px solid #f8c7c7;
+    border-radius: 10px;
+}
+.detail-col:last-child{
+    width: 60%;
+    padding-left: 30px;
+}
+.image-box{
+    width: 60%;
+    margin: 0 auto;
+}
+.detail-title{
+    font-size: 1.5rem;
+}
+.detail-category{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.detail-description{
+    line-height: 1.5;
+}
+.detail-col .btn-fill{
+    display: flex;
+}
+.basket-icon{
+    padding-right: 5px;
+}
+@media screen and (max-width: 768px){
+  .detail-title {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 480px){
+  .detail-flex{
+    flex-direction: column;
+  }
+  .detail-col{
+    width: 100%;
+  }
+  .detail-col:first-child{
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .detail-col:last-child{
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .detail-col:first-child img{
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,35 @@
+.filter-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter-categories, .filter-sort{
+    margin-left: 10px;
+}
+select{
+    margin-left: 10px;
+    padding: 10px 15px 10px 5px;
+    background: #e7dcdec2;
+    border: 1px solid pink;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+select option {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+@media screen and (max-width: 768px){
+    select {
+        padding: 5px 15px 5px 5px;
+      }
+}
+@media screen and (max-width: 480px){
+    .filter-categories, .filter-sort{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .select{
+        margin-top: 5px;
+    }
+}
